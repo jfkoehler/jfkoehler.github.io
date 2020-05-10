@@ -3,87 +3,45 @@
 <head>
         <title>Jacob's Blog</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--[if lte IE 8]><script src="/theme/js/ie/html5shiv.js"></script><![endif]-->
-        <!--[if lte IE 8]><link rel="stylesheet" href="/theme/css/ie8.css" /><![endif]-->
+        <link href="https://jfkoehler.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Jacob's Blog Full Atom Feed" />
+
+        <link rel="stylesheet" href="https://jfkoehler.github.io/theme/css/rdark.css" />
+	<link rel="stylesheet" type="text/css" href="https://jfkoehler.github.io/theme/css/main.css" />
+        <link href="https://jfkoehler.github.io/" type="application/atom+xml" rel="alternate" title="Jacob's Blog ATOM Feed" /><!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  "HTML-CSS": {
+  styles: {
+  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+  },
+  tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+  });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
 </head>
 
-<body>
+<body id="index" class="home">
         <header id="banner" class="body">
                 <h1><a href="https://jfkoehler.github.io/">Jacob's Blog <strong></strong></a></h1>
         </header><!-- /#banner -->
-<!-- Sidebar -->
-            <div id="sidebar">
+        <nav id="menu"><ul>
+        </ul></nav><!-- /#menu -->
+<h1>Archives for Jacob's Blog</h1>
 
-                <!-- Logo -->
-                    <h1 id="logo"><a href="/">Jacob's Blog</a></h1>
-                    <!-- Text -->
-                    <section class="box text-style1">
-                        <div class="inner">
-                            <p>
-                                <strong>Ut scelerisque nec sapien ut sollicitudin:</strong><br />
-                            </p>
-                        </div>
-                    </section>
-                <!-- Nav -->
-                    <nav id="nav">
-                        <ul>
-                            
-                            <li><a href="#">Nam euismod dui</a></li>
-                            <li><a href="#">Integer eget eros</a></li>
-                            <li><a href="#">Proin vehicula tortor</a></li>
-                            <li><a href="#">Vestibulum consectetur tellus</a></li>
-                        </ul>
-                    </nav>
-
-                <!-- Search -->
-                    <!-- <section class="box search">
-                        <form method="post" action="#">
-                            <input type="text" class="text" name="search" placeholder="Search" />
-                        </form>
-                    </section> -->
-
-                
-
-                <!-- Recent Posts -->
-                    <section class="box recent-posts">
-                        <header>
-                            <h2>Contact Me</h2>
-                        </header>
-                        <ul>
-                            <li><a class="icon fa-envelope" href="#"> eMail</a></li>
-                            <li><a class="icon fa-twitter" href="#"> Twitter</a></li>
-                            <li><a class="icon fa-facebook" href="#"> Facebook</a></li>
-                            <li><a class="icon fa-github" href="#"> Github</a></li>
-                            
-                        </ul>
-                    </section>
-
-
-
-                <!-- Copyright -->
-                    <ul id="copyright">
-                        <li>Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.</li>
-                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                        <li>Modified under a <a href="https://creativecommons.org/licenses/by/3.0/">CC:BY</a> license.</li>
-                    </ul>
-
-            </div><!-- /#menu -->
-<div id="content">
-<div class="inner">
-<article class="box post post-excerpt">
-<h2>Archives for Jacob's Blog</h2>
-
-<header> 
-    <h2>Sat 08 June 2019</h2>
-    <p><a href="https://jfkoehler.github.io/first-post.html">First Post</a></p>
-    <p></p>
-</header>
-</article>
-</div>
-</div>
-<!-- /#contentinfo -->
+<dl>
+    <dt>Sat 18 April 2020</dt>
+    <dd><a href="https://jfkoehler.github.io/first-post.html">First Post</a></dd>
+</dl>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
 </body>
 </html>
